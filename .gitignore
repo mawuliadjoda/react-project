@@ -1,6 +1,34 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+
+/react-hooks-crud/.pnp
+/react-hooks-crud/.pnp.js
+
+# testing
+/react-hooks-crud/coverage
+
+# production
+/react-hooks-crud/build
+
+# misc
+/react-hooks-crud/.DS_Store
+/react-hooks-crud/.env
+/react-hooks-crud/.env.local
+/react-hooks-crud/.env.development.local
+/react-hooks-crud/.env.test.local
+/react-hooks-crud/.env.production.local
+
+/react-hooks-crud/npm-debug.log*
+/react-hooks-crud/yarn-debug.log*
+/react-hooks-crud/yarn-error.log*
+
+
+/react-hooks-crud/node_modules
+/react-hooks-crud/build
+/react-hooks-crud/.firebase
+
+
 /node_modules
 /.pnp
 .pnp.js
