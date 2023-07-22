@@ -51,6 +51,21 @@ photo-gallery/yarn-error.log*
 photo-gallery/.eslintcache
 
 
+# react-solid
+react-solid/node_modules
+react-solid/.pnp
+react-solid/.pnp.js
+react-solid/coverage
+react-solid/build
+react-solid/.DS_Store
+react-solid/.env.local
+react-solid/.env.development.local
+react-solid/.env.test.local
+react-solid/.env.production.local
+react-solid/npm-debug.log*
+react-solid/yarn-debug.log*
+react-solid/yarn-error.log*
+
 #
 
 /node_modules
