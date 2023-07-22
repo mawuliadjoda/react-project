@@ -29,6 +29,30 @@ react-hooks-crud/build
 react-hooks-crud/.firebase
 
 
+# photo-gallery
+
+photo-gallery/node_modules
+photo-gallery/.pnp
+photo-gallery/.pnp.js
+photo-gallery/coverage
+photo-gallery/build
+photo-gallery/.DS_Store
+photo-gallery/.env.local
+photo-gallery/.env.development.local
+photo-gallery/.env.test.local
+photo-gallery/.env.production.local
+photo-gallery/.vscode/*
+photo-gallery/!/.vscode/extensions.json
+photo-gallery/.idea
+
+photo-gallery/npm-debug.log*
+photo-gallery/yarn-debug.log*
+photo-gallery/yarn-error.log*
+photo-gallery/.eslintcache
+
+
+#
+
 /node_modules
 /.pnp
 .pnp.js
