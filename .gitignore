@@ -66,6 +66,20 @@ react-solid/npm-debug.log*
 react-solid/yarn-debug.log*
 react-solid/yarn-error.log*
 
+#  ionic-react-pwa
+ionic-react-pwa/node_modules
+ionic-react-pwa/.pnp
+ionic-react-pwa/.pnp.js
+ionic-react-pwa/coverage
+ionic-react-pwa/build
+ionic-react-pwa/.DS_Store
+ionic-react-pwa/.env.local
+ionic-react-pwa/.env.development.local
+ionic-react-pwa/.env.test.local
+ionic-react-pwa/.env.production.local
+ionic-react-pwa/npm-debug.log*
+ionic-react-pwa/yarn-debug.log*
+ionic-react-pwa/yarn-error.log*
 #
 
 /node_modules
