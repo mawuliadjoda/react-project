@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 // import Dashboard from "./pages/Dashboard";
@@ -11,8 +11,30 @@ import NotFound from "./pages/NotFound";
 import Form from "./pages/Form";
 import RegisterIndex from "./pages/auth/Register";
 import Dashboard from "./pages/Dashboard";
+import firebase from "./firebase";
 
 function App() {
+
+  console.log(process.env.REACT_APP_SITE);
+
+  // https://www.geeksforgeeks.org/how-to-use-firestore-database-in-reactjs/
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const unsubscribe = firebase
+      .firestore()
+      .collection("users")
+      .onSnapshot(snapshot => {
+        const newUsers = snapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        console.log(newUsers);
+        setUsers(newUsers);
+      });
+    return () => unsubscribe();
+  }, []);
+
   return (
     <Routes>
       <Route path="/" element={<AuthLayout />}>
