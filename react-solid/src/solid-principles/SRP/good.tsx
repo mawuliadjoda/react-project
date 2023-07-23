@@ -3,8 +3,7 @@ import { UseProducts } from "./hooks/useProducts";
 import { UseRateFilter } from "./hooks/useRateFilter";
 import { Product } from "./product";
 
-
-const Good = () => {
+export function Good() {
     const { products } = UseProducts();
     const { filterRate, handleRating } = UseRateFilter();
 
