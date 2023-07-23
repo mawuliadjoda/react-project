@@ -80,6 +80,23 @@ ionic-react-pwa/.env.production.local
 ionic-react-pwa/npm-debug.log*
 ionic-react-pwa/yarn-debug.log*
 ionic-react-pwa/yarn-error.log*
+
+# connect-pharma
+
+connect-pharma/node_modules
+connect-pharma/.pnp
+connect-pharma/.pnp.js
+connect-pharma/coverage
+connect-pharma/build
+connect-pharma/.DS_Store
+connect-pharma/.env.local
+connect-pharma/.env.development.local
+connect-pharma/.env.test.local
+connect-pharma/.env.production.local
+connect-pharma/npm-debug.log*
+connect-pharma/yarn-debug.log*
+connect-pharma/yarn-error.log*
+
 #
 
 /node_modules
