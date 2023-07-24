@@ -96,7 +96,7 @@ connect-pharma/.env.production.local
 connect-pharma/npm-debug.log*
 connect-pharma/yarn-debug.log*
 connect-pharma/yarn-error.log*
-
+connect-pharma/.env
 
 #
 
