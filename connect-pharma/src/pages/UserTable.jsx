@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import Datatables from "../components/Datatables/Table";
 import TableCell from "../components/Datatables/TableCell";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil, faRemove } from "@fortawesome/free-solid-svg-icons";
 
 function UserTable({ loading, dataHeader, data, handleDelete }) {
+
   return (
-    <Datatables loading={loading} dataHeader={dataHeader}>
+    <div>
+      <Datatables loading={loading} dataHeader={dataHeader}>
       {data?.map((row, index) => (
         <tr
           key={index}
@@ -31,7 +33,7 @@ function UserTable({ loading, dataHeader, data, handleDelete }) {
                   key={index}
                   className="rounded-full py-1 px-3 text-xs font-semibold bg-emerald-200 text-green-900"
                 >
-                  {role.name}
+                  {role}
                 </span>
               ))}
             </span>
@@ -57,6 +59,8 @@ function UserTable({ loading, dataHeader, data, handleDelete }) {
         </tr>
       ))}
     </Datatables>
+    </div>
+    
   );
 }
 
