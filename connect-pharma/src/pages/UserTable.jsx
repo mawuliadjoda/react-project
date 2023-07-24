@@ -1,11 +1,16 @@
 import React from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Datatables from "../components/Datatables/Table";
 import TableCell from "../components/Datatables/TableCell";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil, faRemove } from "@fortawesome/free-solid-svg-icons";
 
 function UserTable({ loading, dataHeader, data, handleDelete }) {
+  const navigate = useNavigate();
+
+  const handleClickEditButton = (user) => {
+    navigate("/editUser", { state: user });
+  };
 
   return (
     <div>
@@ -40,6 +45,11 @@ function UserTable({ loading, dataHeader, data, handleDelete }) {
           </TableCell>
           <TableCell>
             <Link
+              onClick={(e) => {
+                e.preventDefault();
+                handleClickEditButton(row);
+              }}
+
               to={`/auth/master/user/${row.id}/edit`}
               className={`text-sky-700 inline-flex py-2 px-2 rounded  text-sm`}
             >

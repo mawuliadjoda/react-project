@@ -11,6 +11,7 @@ import Form from "./pages/Form";
 import RegisterIndex from "./pages/auth/Register";
 import Dashboard from "./pages/Dashboard";
 import AddUser from "./pages/AddUser";
+import EditUser from "./pages/EditUser";
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
         <Route path="/profile" element={<Blank />}></Route>
 
         <Route path="/addUser" element={<AddUser />} ></Route>
+        <Route path="/editUser" element={<EditUser />} ></Route>
+        
       </Route>
       <Route path="/auth" element={<GuestLayout />}>
         <Route path="/auth/login" element={<Login />}></Route>

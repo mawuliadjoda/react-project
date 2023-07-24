@@ -48,7 +48,7 @@ const Table = () => {
           id: doc.id,
           ...doc.data()
         }));
-        console.log(newUsers);
+        // console.log(newUsers);
         setUsers(newUsers);
       });
     return () => unsubscribe();
