@@ -98,6 +98,23 @@ connect-pharma/yarn-debug.log*
 connect-pharma/yarn-error.log*
 connect-pharma/.env
 
+# learn-react-vite
+
+learn-react-vite/node_modules
+learn-react-vite/.pnp
+learn-react-vite/.pnp.js
+learn-react-vite/coverage
+learn-react-vite/build
+learn-react-vite/.DS_Store
+learn-react-vite/.env.local
+learn-react-vite/.env.development.local
+learn-react-vite/.env.test.local
+learn-react-vite/.env.production.local
+learn-react-vite/npm-debug.log*
+learn-react-vite/yarn-debug.log*
+learn-react-vite/yarn-error.log*
+learn-react-vite/.env
+
 #
 
 /node_modules
